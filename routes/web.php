@@ -12,7 +12,8 @@
 */
 
 
-Route::get('/', 'IndexController@index' );
+Route::get('/', 'IndexController@index')->name('index');
+Route::get('/send', 'IndexController@send')->name('send');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
